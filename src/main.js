@@ -6,10 +6,18 @@ let search_term = '';
 // let countries;
 
 
+window.onload =function(){
+    let contenedor = document.getElementById('container-carga')
+    contenedor.style.visibility = 'hidden';
+    contenedor.style.opacity ='0';
+}
+
 // const fetchInstitutos = async () => {
 //     countries = await fetch('https://restcountries.eu/rest/v2/all?fields=name;population;flag;capital;currencies;languages')
 //         .then(res => res.json())
 // }
+
+
 
 const showInstitutos = async () => {
     results.innerHTML = '';

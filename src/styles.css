@@ -1,12 +1,69 @@
-*{
+
+/* estilos generales */
+
+*,*::after, *::before{
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 body{
-    background-color: #dadada;
-    font-family: sans-serif;
-    /* padding-bottom: 150px; */
+  background-color: #dadada;
+  font-family: sans-serif;
+  /* padding-bottom: 150px; */
 }
+
+
+
+#container-carga{
+  background-image: linear-gradient(
+    180deg,
+    rgb(117, 29, 28),
+    rgb(231, 148, 147)
+  );
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 10000;
+}
+
+/* carga */
+#carga{
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  position: relative;
+  /* border-radius: 50%; */
+  background: transparent;
+  -webkit-animation: girar 1s linear infinite;
+  -o-animation: girar 1s linear infinite;
+  animation: girar 1 linear infinite;
+  
+}
+
+@keyframes girar {
+  /* from{transform: rotate(0deg);}
+  to {transform: rotate(360deg);} */
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 249px;
+    width: 130px;
+    height: 70px;
+  }
+  100% {
+    top: 0px;
+  }
+  
+}
+
+/* buscador */
 
 .buscador{
     /* background-color: #9C6365; */
@@ -19,7 +76,6 @@ body{
     align-items: center;
     height: 230px;
     flex-direction: column;
-   position: sticky;
 }
 .buscador input {
     height: 35px;
@@ -32,11 +88,7 @@ body{
     margin-bottom: 5px;
 }
 
-.img{
-    width: 200px;
-    height: 200px;
-    margin-top: 35px;
-}
+/* tarjetas */
 .flip-card {
     background-color: transparent;
     width: 300px;
@@ -88,7 +140,13 @@ body{
     
   }
 
+  .img{
+    width: 200px;
+    height: 200px;
+    margin-top: 35px;
+}
 
+/* resultado */
   #resultado{
    display: flex;
 
@@ -106,6 +164,7 @@ body{
    margin-bottom: 5px;
  }
 
+ /* footer */
  footer{
    height: 150px;
    display: flex;

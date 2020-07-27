@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html manifest="pagina.appcache"> 
- 
+<html manifest="pagina.appcache">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +9,31 @@
 </head>
 
 <body>
+
+
+    <div id="container-carga">
+        <div id="carga">
+            <figure>
+                <img src="./img/tierra.png" width="200px">
+            </figure>
+        </div>
+    </div>
+    <header>
+        <div class="buscador">
+            <img src="./img/logo-blanco.png" width="100px">
+            <input type="text" id="search" placeholder="Buscar por País" />
+        </div>
+    </header>
     <main>
-        <header>
-            <div class="buscador">
-                <img src="./img/logo-blanco.png" width="100px">
-                <input type="text" id="search" placeholder="Buscar por País" />
-            </div>
-        </header>
         <div id="resultado">
 
         </div>
-        <footer>
-            <p>&copy; 2020 por AlyAb</p>
-        </footer>
+
     </main>
+    <footer>
+        <p>&copy; 2020 por AlyAb</p>
+    </footer>
+
 
 
     <script src="./data/countries/countries.js"></script>
