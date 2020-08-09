@@ -101,3 +101,5 @@ formulario.addEventListener('input', e => {
     search_term = e.target.value;
     showInstitutos();
 });
+
+module.exports = numberWithCommas;

@@ -4,8 +4,13 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "author": "Carolina Méndez",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "eslint-plugin-jest": "^23.19.0",
+    "jest": "^26.1.0"
+  },
+  "devDependencies": {}
 }
